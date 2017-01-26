@@ -1,0 +1,4 @@
+<Files ~ "\.(htaccess|json|lock|phar)$">
+order allow,deny
+deny from all
+</Files>

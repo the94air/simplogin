@@ -1,0 +1,12 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Ivodesign\\": "app/Ivodesign"
+		}
+	},
+	"require": {
+		"vlucas/valitron": "1.3.*",
+		"ezimuel/php-secure-session": "dev-master",
+		"owasp/csrf-protector-php": "dev-master"
+	}
+}
