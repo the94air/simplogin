@@ -9,7 +9,8 @@ Simplogin is a very simple and fully customizable authentication (login and regi
 1.  [vlucas/valitron](https://github.com/vlucas/valitron) as Form validation library
 2.  [paragonie/random_compat](https://github.com/paragonie/random_compat) as random bytes & int genarator
 3.  [mebjas/CSRF-Protector-PHP](https://github.com/mebjas/CSRF-Protector-PHP) as CSRF protector
-4.  [ezimuel/PHP-Secure-Session](https://github.com/ezimuel/PHP-Secure-Session) for Encrypting PHP sessions filename
+4.  [ezimuel/PHP-Secure-Session](https://github.com/ezimuel/PHP-Secure-Session) for Encrypting PHP sessions
+
 
 ## How to use?
 
