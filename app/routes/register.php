@@ -17,7 +17,6 @@ if (isset($_POST['Register'])) {
 	$v->rule('lengthBetween', 'username', 5, 20);
 	$v->rule('slug', 'username');
 	$v->rule('email', 'email');
-	$v->rule('realEmail', 'email');
 	$v->rule('lengthBetween', 'email', 8, 40);
 	$v->rule('lengthBetween', 'password', 8, 30);
 	$v->rule('equals', 'confirm_password','password');
@@ -32,7 +31,7 @@ if (isset($_POST['Register'])) {
 
 	if (empty($errors)) {
 
-		$password_hash = $helper->password($password);
+		$password_hash = $hash->password($password);
 
 		$Register = $database->prepare("INSERT INTO `users` (`username`, `email`, `password`, `active`) VALUES (:username,:email,:password,:active)");
 

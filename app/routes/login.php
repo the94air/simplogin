@@ -32,7 +32,7 @@ if (isset($_POST['Login'])) {
 			
 			$AccountData = $AccountExists->fetch();
 			$HashedPassword = $AccountData['password'];
-			$PasswordResult = $helper->checkPassword($password, $HashedPassword);
+			$PasswordResult = $hash->checkPassword($password, $HashedPassword);
 
 			if ($PasswordResult === true) {
 				if ($AccountData['active'] === 1) {

@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0fa3f32c327c2ab54d5d94a79f29b01c",
     "content-hash": "707bcdc77392601e153df546d61010b6",
     "packages": [
         {
@@ -13,22 +12,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezimuel/PHP-Secure-Session.git",
-                "reference": "c95d5991f5aee7ffe28d68ab96b347069d8d0c9d"
+                "reference": "6635d71f54a0e967457dce31cb18ae2c616b8827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezimuel/PHP-Secure-Session/zipball/c95d5991f5aee7ffe28d68ab96b347069d8d0c9d",
-                "reference": "c95d5991f5aee7ffe28d68ab96b347069d8d0c9d",
+                "url": "https://api.github.com/repos/ezimuel/PHP-Secure-Session/zipball/6635d71f54a0e967457dce31cb18ae2c616b8827",
+                "reference": "6635d71f54a0e967457dce31cb18ae2c616b8827",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "paragonie/random_compat": "^2.0.2",
-                "php": "^5.5|^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -50,7 +49,7 @@
                 "encrypt",
                 "session"
             ],
-            "time": "2016-05-19 12:37:26"
+            "time": "2017-01-26T23:22:40+00:00"
         },
         {
             "name": "owasp/csrf-protector-php",
@@ -86,7 +85,7 @@
                 "owasp",
                 "security"
             ],
-            "time": "2016-11-04 14:21:31"
+            "time": "2016-11-04T14:21:31+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -134,7 +133,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-11-07 23:38:38"
+            "time": "2016-11-07T23:38:38+00:00"
         },
         {
             "name": "vlucas/valitron",
@@ -180,7 +179,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2016-12-09 10:59:35"
+            "time": "2016-12-09T10:59:35+00:00"
         }
     ],
     "packages-dev": [],

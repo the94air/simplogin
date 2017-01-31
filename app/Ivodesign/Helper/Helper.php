@@ -5,6 +5,7 @@ namespace Ivodesign\Helper;
 Class Helper
 {
 
+	// Output all your form errors 
 	public function outputErrors()
 	{
 		global $errors;
@@ -17,28 +18,12 @@ Class Helper
 
 	}
 
-	public function password($value)
-	{
-	
-		return password_hash($value, PASSWORD_DEFAULT, ['cost' => 10]);
-	
-	}
-
-	public function checkPassword($value, $hashedValue)
-	{
-	
-		return password_verify($value, $hashedValue);
-	
-	}
-
 	public function redirect($value)
 	{
 	
 		return exit(header('Location: '. URL_ROOT . $value));
 	
 	}
-
-	
 
 	public function result($value)
 	{
