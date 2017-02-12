@@ -8,6 +8,6 @@
 		"vlucas/valitron": "1.3.*",
 		"paragonie/random_compat": "2.0.*",
 		"ezimuel/php-secure-session": "dev-master",
-		"owasp/csrf-protector-php": "dev-master"
+        "owasp/csrf-protector-php": "dev-nojs-support"
 	}
 }

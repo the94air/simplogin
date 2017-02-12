@@ -15,7 +15,12 @@ Simplogin is a very simple and fully customizable authentication (login and regi
 
 1.  Import the `site.sql` file to your database.
 2.  Update your app configuration details `app/config/development.php` and select the mode `app/mode.php` you can also make your own config file in `app/config/` folder.
-3.  
+3.  Install all the dependencies  
+```
+$ composer update
+```
+4.  Add your CSRF configuration in `vendor/owasp/csrf-protector-php/libs/config.sample.php` you may use my configuration in the root of this project.  
+[More about the CSRF configuration](https://github.com/mebjas/CSRF-Protector-PHP/wiki/Configurations)
 
 ## Always remember
 1.  Disable `PDO error` and `php display errors` in production mode.
