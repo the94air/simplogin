@@ -7,10 +7,10 @@ Class Check
 
 	public function usernameExists($username)
 	{
-		global $database;
+		global $auth;
 		global $errors;
 
-		$CheckUsername = $database->prepare("SELECT id FROM `users` WHERE username = :username LIMIT 1");
+		$CheckUsername = $auth->prepare("SELECT id FROM `users` WHERE username = :username LIMIT 1");
 
 		$CheckUsername->execute([ ':username' => $username ]);
 
@@ -24,10 +24,10 @@ Class Check
 
 	public function emailExists($email)
 	{
-		global $database;
+		global $auth;
 		global $errors;
 
-		$CheckEmail = $database->prepare("SELECT id FROM `users` WHERE email = :email LIMIT 1");
+		$CheckEmail = $auth->prepare("SELECT id FROM `users` WHERE email = :email LIMIT 1");
 
 		$CheckEmail->execute([ ':email' => $email ]);
 

@@ -11,10 +11,10 @@ Class User
 
 	public function accountStatus()
 	{
-		global $database;
+		global $auth;
 		$user_id = $_SESSION['user_id'];
 
-		$Account = $database->prepare("SELECT `active` FROM `users` WHERE `id` = :id LIMIT 1");
+		$Account = $auth->prepare("SELECT `active` FROM `users` WHERE `id` = :id LIMIT 1");
 
 		$Account->execute([ ':id' => $user_id ]);
 

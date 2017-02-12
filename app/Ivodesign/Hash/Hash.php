@@ -9,9 +9,9 @@ Class Hash
 
 	public function password($value)
 	{
-		global $conf;
+		global $c;
 
-		return password_hash($value, PASSWORD_DEFAULT, ['cost' => Config::get($conf, 'hash.cost')]);
+		return password_hash($value, PASSWORD_DEFAULT, ['cost' => Config::get($c, 'hash.cost')]);
 	
 	}
 

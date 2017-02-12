@@ -49,7 +49,7 @@
                 "encrypt",
                 "session"
             ],
-            "time": "2017-01-26T23:22:40+00:00"
+            "time": "2017-01-26 23:22:40"
         },
         {
             "name": "owasp/csrf-protector-php",
@@ -57,12 +57,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mebjas/CSRF-Protector-PHP.git",
-                "reference": "6f12262f406bb9a5ebf94f9a535944d5cc9fa29a"
+                "reference": "6992a02abd9ef059de2514e45e26653152e5aace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mebjas/CSRF-Protector-PHP/zipball/6f12262f406bb9a5ebf94f9a535944d5cc9fa29a",
-                "reference": "6f12262f406bb9a5ebf94f9a535944d5cc9fa29a",
+                "url": "https://api.github.com/repos/mebjas/CSRF-Protector-PHP/zipball/6992a02abd9ef059de2514e45e26653152e5aace",
+                "reference": "6992a02abd9ef059de2514e45e26653152e5aace",
                 "shasum": ""
             },
             "require-dev": {
@@ -85,7 +85,7 @@
                 "owasp",
                 "security"
             ],
-            "time": "2016-11-04T14:21:31+00:00"
+            "time": "2017-02-11 23:02:54"
         },
         {
             "name": "paragonie/random_compat",

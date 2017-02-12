@@ -1,19 +1,32 @@
 <?php
 
 try{
-	$database = new PDO (
-		'mysql:host=localhost;dbname=site;charset=utf8',
-		'root',
-		''
+
+foreach ($conf->get($c, 'db') as $db) {
+
+$connection_name = $db['db_connection_name'];
+
+$statment = 
+	$db['db_driver'].
+	':host=' . $db['db_host'].
+	';dbname=' . $db['db_name'].
+	';charset=' . $db['db_charset'];
+
+	$$connection_name = new PDO ( 
+		$statment,
+		$db['db_username'],
+		$db['db_password']
 	);
 
-	if ($config->get($conf, 'db.errors') === 'true') {
-		$database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	}
-	
-	$database->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+	$$connection_name->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, $db['default_fetch_mode']);
 
-	$database->setAttribute( PDO::ATTR_EMULATE_PREPARES, false);
+	$$connection_name->setAttribute( PDO::ATTR_EMULATE_PREPARES, $db['emulate_prepares']);
+
+	if ($db['db_error_mode'] !== false) {
+		$auth->setAttribute(PDO::ATTR_ERRMODE, $db['db_error_mode']);
+	}
+
+}
 
 } catch(PDOException $e){
     			

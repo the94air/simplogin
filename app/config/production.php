@@ -3,14 +3,45 @@
 return 
 [
 	'app' => [
-		'display_errors' => 'Off',
-		'url' => 'http://localhost'
+		'display_errors' => 'Off', //OR On
+		'url' => 'http://localhost',
 			],
 	'db' => [
-		'errors' => 'false'
+		'db1' => [
+			'db_connection_name' => 'auth',
+			'db_driver' => 'mysql',
+			'db_host' => 'localhost',
+			'db_name' => 'site',
+			'db_username' => 'root',
+			'db_password' => '',
+			'db_charset' => 'utf8',
+			'db_error_mode' => false, 
+					// OR false 
+					// OR PDO::ERRMODE_SILENT: Just set error codes.
+					// OR PDO::ERRMODE_WARNING: Raise E_WARNING.
+			'default_fetch_mode' => PDO::FETCH_ASSOC,
+					// All fetch modes https://goo.gl/e5E7wc
+			'emulate_prepares' => false // OR true
+				],
+		'db2' => [
+			'db_connection_name' => 'database',
+			'db_driver' => 'mysql',
+			'db_host' => 'localhost',
+			'db_name' => 'sites',
+			'db_username' => 'root',
+			'db_password' => '',
+			'db_charset' => 'utf8',
+			'db_error_mode' => false, 
+					// OR false 
+					// OR PDO::ERRMODE_SILENT: Just set error codes.
+					// OR PDO::ERRMODE_WARNING: Raise E_WARNING.
+			'default_fetch_mode' => PDO::FETCH_ASSOC,
+					// All fetch modes https://goo.gl/e5E7wc
+			'emulate_prepares' => false // OR true
+				]
 			],
 	'Validator' => [
-		'lang' => 'ar' //OR en, ar, fr, uk
+		'lang' => 'en' //OR en, ar, fr, uk
 			],
 	'hash' => [
 		'cost' => 10

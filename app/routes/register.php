@@ -33,7 +33,7 @@ if (isset($_POST['Register'])) {
 
 		$password_hash = $hash->password($password);
 
-		$Register = $database->prepare("INSERT INTO `users` (`username`, `email`, `password`, `active`) VALUES (:username,:email,:password,:active)");
+		$Register = $auth->prepare("INSERT INTO `users` (`username`, `email`, `password`, `active`) VALUES (:username,:email,:password,:active)");
 
 		$Register->execute([
 

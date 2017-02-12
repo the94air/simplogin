@@ -21,7 +21,7 @@ if (isset($_POST['Login'])) {
 
 	if (empty($errors)) {
 
-		$AccountExists = $database->prepare("SELECT `id`, `username`, `password`, `active` FROM `users` WHERE `username` = :username OR `email` = :email LIMIT 1");
+		$AccountExists = $auth->prepare("SELECT `id`, `username`, `password`, `active` FROM `users` WHERE `username` = :username OR `email` = :email LIMIT 1");
 
 		$AccountExists->execute([ 
 			':username' => $identifier,
