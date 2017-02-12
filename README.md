@@ -2,7 +2,7 @@
 
 ## Simple secure login & register via php
 
-Simplogin is a very simple and fully customizable authentication (login and register) with PHP and Mysql useing PDO and some composer dependencies.
+Simplogin is a very simple and fully customizable authentication (login and register) with PHP, PDO and some composer dependencies.
 
 ## Composer Dependencies
 
