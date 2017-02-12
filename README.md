@@ -19,7 +19,7 @@ Simplogin is a very simple and fully customizable authentication (login and regi
 ```
 $ composer update
 ```
-4.  Add your CSRF configuration in `vendor/owasp/csrf-protector-php/libs/config.sample.php` you may use my configuration in the root of this project.  
+4.  Add your CSRF configuration in `vendor/owasp/csrf-protector-php/libs/config.sample.php` and rename it to `config.php` you may use my configuration in the root of this project.  
 [More about the CSRF configuration](https://github.com/mebjas/CSRF-Protector-PHP/wiki/Configurations)
 
 ## Always remember
