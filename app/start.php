@@ -16,6 +16,7 @@ session_start();
 define('APP_ROOT', dirname(__DIR__));
 
 require_once APP_ROOT . '/vendor/autoload.php';
+include_once APP_ROOT .'/vendor/owasp/csrf-protector-php/libs/csrf/csrfprotector.php';
 
 $c = include APP_ROOT . '/app/config/' . file_get_contents(APP_ROOT . '/app/mode.php') . '.php';
 
