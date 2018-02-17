@@ -1,4 +1,4 @@
-# Simplogin
+# Simplogin [DEPRECATED]
 
 ## Simple secure login & register via php
 
